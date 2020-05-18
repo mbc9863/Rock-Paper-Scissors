@@ -38,7 +38,7 @@ class HumanPlayer(Player):  # Ask for input and check validity
             print("The choice you made is invalid,"
                   " please enter rock, paper or scissors")
             time.sleep(1)
-            self.move()
+            return self.move()
 
 
 class ReflectPlayer(Player):  # Remember opponent previous play and mirror
